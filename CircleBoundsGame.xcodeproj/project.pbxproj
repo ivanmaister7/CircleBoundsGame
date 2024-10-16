@@ -16,6 +16,11 @@
 			path = CircleBoundsGame;
 			sourceTree = "<group>";
 		};
+		2CF982262CC079F000FE2A19 /* GameScene */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = GameScene;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXGroup;
 			children = (
 				2CABC9C02CBFD3D4008B51C4 /* CircleBoundsGame */,
+				2CF982262CC079F000FE2A19 /* GameScene */,
 				2CABC9BF2CBFD3D4008B51C4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +68,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				2CABC9C02CBFD3D4008B51C4 /* CircleBoundsGame */,
+				2CF982262CC079F000FE2A19 /* GameScene */,
 			);
 			name = CircleBoundsGame;
 			packageProductDependencies = (
