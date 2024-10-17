@@ -37,8 +37,8 @@ class CircleNode: SKCropNode {
         self.addChild(circleSprite)
         
         self.physicsBody = SKPhysicsBody(circleOfRadius: radius)
-        self.physicsBody?.categoryBitMask = 1
-        self.physicsBody?.contactTestBitMask = 2
+        self.physicsBody?.categoryBitMask = CollisionCircleBitMask.circle.rawValue
+        self.physicsBody?.contactTestBitMask = CollisionCircleBitMask.obstacle.rawValue
         self.physicsBody?.collisionBitMask = 0
         self.physicsBody?.isDynamic = true
         self.physicsBody?.affectedByGravity = false

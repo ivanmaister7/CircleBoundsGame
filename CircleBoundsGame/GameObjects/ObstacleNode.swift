@@ -17,7 +17,7 @@ class ObstacleNode: SKShapeNode {
         self.position = CGPoint(x: x, y: y)
         
         self.physicsBody = SKPhysicsBody(rectangleOf: self.frame.size)
-        self.physicsBody?.categoryBitMask = 2
+        self.physicsBody?.categoryBitMask = CollisionCircleBitMask.obstacle.rawValue
         self.physicsBody?.collisionBitMask = 0
         self.physicsBody?.isDynamic = false
     }
