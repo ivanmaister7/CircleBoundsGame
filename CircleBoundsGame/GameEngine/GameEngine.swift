@@ -19,9 +19,9 @@ class GameEngine {
     private static let maxObstacleSpeed = 5
     private static let timeBetweenNextSpawn = 5.0
     
-    private static let topObstacleYOffset = 150.0
     private static let midObstacleYOffset = 50.0
-    private static let bottomObstacleYOffset = 180.0
+    private static var topObstacleYOffset: CGFloat { UIDevice.current.userInterfaceIdiom == .phone ? 150.0 : 250.0}
+    private static var bottomObstacleYOffset: CGFloat { UIDevice.current.userInterfaceIdiom == .phone ? 180.0 : 280.0}
     
     //MARK: Properties
     var scene: SKScene

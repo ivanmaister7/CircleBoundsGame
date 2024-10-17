@@ -20,10 +20,10 @@ class GameScene: SKScene {
     private static let lifesFontSize = 30.0
     
     private static let plusButtonXOffset = 100.0
-    private static let plusButtonYOffset = 100.0
+    private static var plusButtonYOffset: CGFloat { UIDevice.current.userInterfaceIdiom == .phone ? 100.0 : 200.0}
     
     private static let lifesLabelXOffset = 150.0
-    private static let lifesLabelYOffset = 150.0
+    private static var lifesLabelYOffset: CGFloat { UIDevice.current.userInterfaceIdiom == .phone ? 150.0 : 250.0}
      
     private static let alertTitle = "Гра закінчена"
     private static let alertMessage = "Перезапустити?"
